@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Child Information QR Code</title>
+    <link rel="stylesheet" href="child.css">
+
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>   
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h2>Child Information</h2>
+
+        <input type="text" id="childName" placeholder="Child Name">
+
+        <input type="text" id="parentName" placeholder="Parent Name">
+
+        <input type="text" id="mobile" placeholder="Mobile Number">
+
+        <input type="number" id="age" placeholder="Child Age">
+
+        <input type="text" id="address" placeholder="Address">
+
+
+        <br>
+
+        <button onclick="generateQR()">Generate QR Code</button>
+
+        <div id="qrcode"></div>
+
+        <p id="message"></p>
+
+    </div>
+<script src="child.js"></script>
+</body>
+</html>
